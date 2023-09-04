@@ -1,20 +1,51 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
-    <link rel="shortcut icon" href="" type="image/favicon.ico">
+<html lang="pt-BR">
 <head>
-    <li><a href="index.html">Início</a></li>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="capybara/favicon.ico.png" type="image/x-icon">
+<head>
     <ul>
-        <li><a href="index.html" rel="next">Pagina 1</a></li>
-        <li><a href="secundario.html">Pagina 2</a></li>
-        <li><a href="terceiro.html">Galeria</a></li>
-        </ul>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <li><a href="index.html">Início</a></li>
+        <li>Páginas</li>
+        <ul>
+            <li><a href="primeiro.html" rel="next">Página 1</a></li>
+            <li><a href="segundo.html">Página 2</a></li>
+        <ul> 
+            <li><a href="terceiro.html">Galeria</a></li>
+            <li><a href="quarto.html">Fale Conosco</a></li>
+    </ul>  
         <h1>Galeria</h1>
-        <img src="capybara/27112021123315_viloes_d_c.jpg" alt="Vilões da Disney">
-        <img src="capybara/918FMBNHXnL._AC_UF1000,1000_QL80_.jpg" alt="Heróis dos X-men">
-        <img src="capybara/EvilGroup.jpg" alt="Vilões da Marvel">
-        <img src="capybara/img5e43ef192ae0f9.80731448.jpg" alt= "Novamente a mesma imagem que acima"> 
-        <img src="capybara/img638008e680ad78.61750577.jpg" alt="Imagem de vilões da marvel part.2">
+        <picture>
+            <source media="(max-width: 750px)" srcset="capybara/marvel-p.png">
+            <source media="(max-width: 1050px)" srcset="capybara/marvel-m.png">
+            <img src="capybara/marvel-p.jpg" alt="Vilões da Marvel e da.">
+        </picture>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="capybara/disneyvilões-html-css-p.jpg">
+            <source media="(max-width: 1050px)" srcset="capybara/disneyvilões-html-css-m.jpg">
+            <img src="capybara/disneyvilões-html-css-g.jpg" alt="Vilões da Dysney.">
+        </picture>
+        
+        <picture>
+            <source media="(max-width: 750px)" srcset="capybara/vilõesDC-p.png">
+            <source media="(max-width: 1050px)" srcset="capybara/vilõesDC-m.png">
+            <img src="capybara/vilõesDC-html-css-m.png" alt="Alguns dos vilões da DC.">
+        </picture>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="capybara/DChtml-css-p.jpg">
+            <source media="(max-width: 1050px)" srcset="capybara/DChtml-css-m.jpg">
+            <img src="capybara/DChtml-css-p.jpg" alt="Iconicos vilões da DC.">
+        </picture>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="capybara/vilõesDC-p.png">
+            <source media="(max-width: 1050px)" srcset="capybara/vilõesDC-m.png">
+            <img src="capybara/antiheroinahtml-css-g.jpg" alt="Alerquina, Malevola e Cruella.">
+        </picture>
+
         <!-- a gente prestou atenção seu bostinha -->
         
