@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Fale Conosco</title>
-        <link rel="shortcut icon" href="capybara/favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-        <nav>
-            <ul type="disc">
-            <li><a href="index.html">Início</a></li>
-            <li>Páginas</li>
-            <ul>
-                <li><a href="primeiro.html">Vilões</a></li>
-                <li><a href="segundo.html">Anti-Herois</a></li>
-            </ul>
-                <li><a href="terceiro.html"rel="prev">Galeria</a></li>
-                <li><a href="quarto.html">Fale Conosco</a></li>
-            </ul>
-        </nav>
-    </body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="shortcut icon" href="capybara/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li>Páginas</li>
+        <ul>
+            <li><a href="primeiro.html">Vilões</a></li>
+            <li><a href="segundo.html">Anti-Herois</a></li>
+        </ul>    
+            <li><a href="terceiro.html">Galeria</a></li>
+            <li><a href="quarto.html">Fale Conosco</a></li>
+    </ul>
+
+    <form>
+        <fieldset>
+                <legend>Isso é uma legenda de fieldset</legend>
+                <p><label for="idTexto">Texto:</label><input type="text" name="nTexto" id="idTexto" size="40" placeholder="Um exemplo ou direcionamento para o usuário"></p>
+                <p><label for="idEmail">Email:</label><input type="email" name="nEmail" id="idEmail" placeholder="exemplo01@gmail.com"></p>
+                <p><label for="idData">Data:</label><input type="date" name="nData" id="idData"></p>
+                <p><label for="idSenha">Senha:</label><input type="password" name="nSenha" id="idSenha"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Legenda de outro fieldset</legend>
+            <label for="id1">Opção Única</label><br><input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 1" id="id1"><label
+                for="id1">Opção 1</label>
+            <input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 2" id="id2"><label for="id2">Opção 2</label>
+            <input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 3" id="id3"><label for="id3">Opção 3</label>
+            <br>
+            <br>
+            <label for="idNum">Numérico</label><br><input type="number" name="nNum" id="idNum" min="0" max="10">
+            <br>
+            <br>
+            <label for="idSelecao">Seleção pré-definida</label><br>
+            <select name="nSelecao" id="idSelecao">
+                <option value="Coisa 1">Coisa 1</option>
+                <option value="Coisa 2">Coisa 2</option>
+                <option value="Coisa 3">Coisa 3</option>
+                <option value="Coisa 4">Coisa 4</option>
+                <option value="Coisa 5">Coisa 5</option>
+            </select>
+            <br>
+            <br>    
+            <label for="idRange">Tipo numérico de arrastar</label><br><input type="range" min="1" max="10" name="nRange" id="idRange">
+            <br>
+            <br>
+            <label for="idCaixa">Caixa de texto grande:</label><br><textarea type="text" cols="50" rows="10" placeholder="Digite aqui alguma coisa" name="nCaixa" id="idCaixa"></textarea><br>
+        </fieldset>
+    </form>
+</body>
